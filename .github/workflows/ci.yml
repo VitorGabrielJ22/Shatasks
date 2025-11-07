@@ -27,5 +27,6 @@ jobs:
 
     - name: Rodar testes
       run: |
-        export PYTHONPATH="${PYTHONPATH}:src"
-        pytest tests/
+        python -m pytest tests/
+      env:
+        PYTHONPATH: src
