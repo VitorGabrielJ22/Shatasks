@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout do código
-      uses: actions/checkout@v3
+      # 1. Fazer checkout do repositório
+      - name: Checkout do código
+        uses: actions/checkout@v3
 
-    - name: Configurar Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-
-    - name: Instala
+      # 2. Configurar Python 3.11
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version:
