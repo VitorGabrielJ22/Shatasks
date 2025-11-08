@@ -13,6 +13,9 @@ O projeto utiliza **Kanban** no GitHub Projects para organizar tarefas: To Do, I
 
 ## 🔄 Mudança de Escopo
 
+- **[11/2025]** — Corrigida incompatibilidade entre Flask 2.3.2 e Werkzeug 3.x.  
+  A versão do Werkzeug foi fixada em **2.3.7** para manter compatibilidade e garantir a execução correta dos testes automatizados.
+
 Durante o desenvolvimento, o cliente solicitou a adição de um novo campo `due_date` nas tarefas, permitindo definir uma data de entrega.  
 Essa mudança exigiu:
 - Atualização do endpoint de criação de tarefas (`POST /tasks`)
@@ -20,4 +23,3 @@ Essa mudança exigiu:
 - Registro da mudança no Kanban (card “Adicionar campo due_date às tarefas”)
 
 Essa modificação demonstra a flexibilidade e adaptabilidade do projeto às mudanças de requisitos — princípios fundamentais das metodologias ágeis.
-
